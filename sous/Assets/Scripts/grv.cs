@@ -31,7 +31,7 @@ public class grv : MonoBehaviour
             if (other.attachedRigidbody != null)
             {
                 affectedBodies1.Add(other.attachedRigidbody);
-                //Frs++;
+                CountForses.FRS++;
             }
         }
         if (other.gameObject.tag == "prt2")
@@ -39,7 +39,7 @@ public class grv : MonoBehaviour
             if (other.attachedRigidbody != null)
             {
                 affectedBodies2.Add(other.attachedRigidbody);
-                //Frs++;
+                CountForses.FRS++;
             }
         }
         if (other.gameObject.tag == "prt3")
@@ -47,7 +47,7 @@ public class grv : MonoBehaviour
             if (other.attachedRigidbody != null)
             {
                 affectedBodies3.Add(other.attachedRigidbody);
-                //Frs++;
+                CountForses.FRS++;
             }
         }
         if (other.gameObject.tag == "prt4")
@@ -55,7 +55,7 @@ public class grv : MonoBehaviour
             if (other.attachedRigidbody != null)
             {
                 affectedBodies4.Add(other.attachedRigidbody);
-                //Frs++;
+                CountForses.FRS++;
             }
         }
         
@@ -67,7 +67,7 @@ public class grv : MonoBehaviour
             if (other.attachedRigidbody != null)
             {
                 affectedBodies1.Remove(other.attachedRigidbody);
-
+                CountForses.FRS = CountForses.FRS-1;
             }
         }
         if (other.gameObject.tag == "prt2")
@@ -75,7 +75,7 @@ public class grv : MonoBehaviour
             if (other.attachedRigidbody != null)
             {
                 affectedBodies2.Remove(other.attachedRigidbody);
-
+                CountForses.FRS = CountForses.FRS - 1;
             }
         }
         if (other.gameObject.tag == "prt3")
@@ -83,7 +83,7 @@ public class grv : MonoBehaviour
             if (other.attachedRigidbody != null)
             {
                 affectedBodies3.Remove(other.attachedRigidbody);
-
+                CountForses.FRS = CountForses.FRS - 1;
             }
         }
         if (other.gameObject.tag == "prt4")
@@ -91,7 +91,7 @@ public class grv : MonoBehaviour
             if (other.attachedRigidbody != null)
             {
                 affectedBodies4.Remove(other.attachedRigidbody);
-
+                CountForses.FRS = CountForses.FRS - 1;
             }
         }
     }
@@ -178,7 +178,7 @@ public class grv : MonoBehaviour
                 body.AddForce(dirictionToParticle * (frs1 * forse4)); //применение силы
             }
         }
-        Frs = affectedBodies1.Count+affectedBodies2.Count+affectedBodies3.Count+affectedBodies4.Count+1;
+        //Frs = affectedBodies1.Count+affectedBodies2.Count+affectedBodies3.Count+affectedBodies4.Count+1;
         //componentRB.velocity = componentRB.velocity * 0.9995f; //постепенное замедление частиц для стабилизации симметричных систем
         
     }

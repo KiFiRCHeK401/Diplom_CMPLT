@@ -8,7 +8,7 @@ public class spawn : MonoBehaviour
     public GameObject obj;
     public List<GameObject> objs;
     public int n = 0;
-    public int velocity = 0;
+    public int velocity = 50;
     public int scale = 0;
     public int type = 0;
 
@@ -80,6 +80,7 @@ public class spawn : MonoBehaviour
         {
             a = GameObject.Instantiate(obj);
             a.transform.position = new Vector3(rnd.Next(-25, 25), rnd.Next(-25, 25), rnd.Next(-25, 25));
+            a.GetComponent<Rigidbody>().AddForce(new Vector3(rnd.Next(-velocity, velocity), rnd.Next(-velocity, velocity), rnd.Next(-velocity, velocity)));
             objs.Add(a);
             spawn.count = spawn.count + 1;
         }
@@ -94,6 +95,7 @@ public class spawn : MonoBehaviour
         {
             a = GameObject.Instantiate(obj);
             a.transform.position = new Vector3(rnd.Next(-25, 25), rnd.Next(-25, 25), rnd.Next(-25, 25));
+            a.GetComponent<Rigidbody>().AddForce(new Vector3(rnd.Next(-velocity, velocity), rnd.Next(-velocity, velocity), rnd.Next(-velocity, velocity)));
             objs.Add(a);
             spawn.count = spawn.count + 1;
         }
@@ -108,6 +110,7 @@ public class spawn : MonoBehaviour
         {
             a = GameObject.Instantiate(obj);
             a.transform.position = new Vector3(rnd.Next(-25, 25), rnd.Next(-25, 25), rnd.Next(-25, 25));
+            a.GetComponent<Rigidbody>().AddForce(new Vector3(rnd.Next(-velocity, velocity), rnd.Next(-velocity, velocity), rnd.Next(-velocity, velocity)));
             objs.Add(a);
             spawn.count = spawn.count + 1;
         }
@@ -122,6 +125,7 @@ public class spawn : MonoBehaviour
         {
             a = GameObject.Instantiate(obj);
             a.transform.position = new Vector3(rnd.Next(-25, 25), rnd.Next(-25, 25), rnd.Next(-25, 25));
+            a.GetComponent<Rigidbody>().AddForce(new Vector3(rnd.Next(-velocity, velocity), rnd.Next(-velocity, velocity), rnd.Next(-velocity, velocity)));
             objs.Add(a);
             spawn.count = spawn.count + 1;
         }

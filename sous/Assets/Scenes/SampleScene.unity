@@ -6469,7 +6469,7 @@ MonoBehaviour:
   obj: {fileID: 2112625261205564841, guid: df9f0115b2afbf44caecfe131b4ba43d, type: 3}
   objs: []
   n: 0
-  velocity: 0
+  velocity: 200
   scale: 25
   type: 1
 --- !u!4 &1167886800
@@ -6501,7 +6501,7 @@ MonoBehaviour:
   obj: {fileID: 5707002511032620015, guid: d17e78857b1539a47aa8ee16a0cf5bf5, type: 3}
   objs: []
   n: 0
-  velocity: 0
+  velocity: 200
   scale: 25
   type: 2
 --- !u!114 &1167886802
@@ -6519,7 +6519,7 @@ MonoBehaviour:
   obj: {fileID: 8904812970925086395, guid: b7b3fef839a6cad44942519402781c39, type: 3}
   objs: []
   n: 0
-  velocity: 0
+  velocity: 200
   scale: 25
   type: 3
 --- !u!114 &1167886803
@@ -6537,7 +6537,7 @@ MonoBehaviour:
   obj: {fileID: 2625787629947998528, guid: 6e05c4ae9eaaab1499ad9921af603c54, type: 3}
   objs: []
   n: 0
-  velocity: 10
+  velocity: 200
   scale: 25
   type: 4
 --- !u!1 &1197065354

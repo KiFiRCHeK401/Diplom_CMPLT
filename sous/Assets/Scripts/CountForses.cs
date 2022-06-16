@@ -7,7 +7,7 @@ public class CountForses : MonoBehaviour
 {
 
     public Text Count;
-
+    public static int  FRS;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +18,7 @@ public class CountForses : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Count.text = grv.Frs.ToString();
+        Count.text = FRS.ToString();
 
     }
 }
